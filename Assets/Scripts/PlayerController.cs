@@ -15,5 +15,9 @@ public class PlayerController : MonoBehaviour
     {
         moveInput = Input.GetAxisRaw("Horizontal");
         rBody.linearVelocityX = moveInput * moveSpeed * Time.fixedDeltaTime;
+        if (rBody.linearVelocityY > 0f)
+        {
+            rBody.linearVelocityY = 0f;
+        }
     }
 }
