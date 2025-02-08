@@ -1,9 +1,23 @@
+using System;
 using UnityEngine;
 
 public class LevelRotator : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed = 5f;
     private Quaternion targetRotation;
+
+    public static Action<bool> rotateLevel;
+
+
+    void OnEnable()
+    {
+        rotateLevel += OnRotateLevel;
+    }
+
+    void OnDisable()
+    {
+        rotateLevel -= OnRotateLevel;
+    }
 
 
     void Start()
@@ -18,14 +32,15 @@ public class LevelRotator : MonoBehaviour
     }
 
 
-    public void RotateLevelLeft()
+    void OnRotateLevel(bool right)
     {
-        targetRotation *= Quaternion.AngleAxis(90f, transform.forward);
-    }
-
-
-    public void RotateLevelRight()
-    {
-        targetRotation *= Quaternion.AngleAxis(-90f, transform.forward);
+        if (right)
+        {
+            targetRotation *= Quaternion.AngleAxis(-90f, transform.forward);
+        }
+        else
+        {
+            targetRotation *= Quaternion.AngleAxis(90f, transform.forward);
+        }
     }
 }

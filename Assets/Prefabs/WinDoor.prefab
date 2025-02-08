@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 6738101118898999408}
   - component: {fileID: 6969425043585051972}
   - component: {fileID: 146445981443221369}
-  - component: {fileID: 8431487911698487357}
-  - component: {fileID: 4384195852502446901}
+  - component: {fileID: 1739761870709487322}
   m_Layer: 0
   m_Name: WinDoor
   m_TagString: Untagged
@@ -164,7 +163,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8431487911698487357
+--- !u!114 &1739761870709487322
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,33 +172,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3639587417846909164}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86bdaa0b08174d34faf4e16b920d651c, type: 3}
+  m_Script: {fileID: 11500000, guid: ca33e41555e8a29488c552d149a1d2f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4384195852502446901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3639587417846909164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb54897d0e798a6449617b28901c418c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playercolided:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8431487911698487357}
-        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2

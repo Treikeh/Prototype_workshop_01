@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4724972432284972842}
   - component: {fileID: 9119917999106545393}
   - component: {fileID: 2298189727129274640}
-  - component: {fileID: 1890245528916071843}
+  - component: {fileID: 607812292885230959}
   m_Layer: 0
   m_Name: RotaterTriggerRight
   m_TagString: Untagged
@@ -163,7 +163,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1890245528916071843
+--- !u!114 &607812292885230959
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,9 +172,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7839049831021904213}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb54897d0e798a6449617b28901c418c, type: 3}
+  m_Script: {fileID: 11500000, guid: b2c84fa28cd4ec64285895f21254bbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playercolided:
-    m_PersistentCalls:
-      m_Calls: []
+  rotateRight: 1
